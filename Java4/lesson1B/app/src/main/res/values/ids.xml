@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="toggleButton1" type="id">Right</item>
+    <item name="checkBox1" type="id">Checkbox</item>
+    <item name="button1" type="id">Btn1</item>
+    <item name="radioButton1" type="id">Rbtn1</item>
+    <item name="checkedTextView1" type="id">checktext1</item>
+    <item name="button2" type="id">btn2</item>
+    <item name="textView4" type="id">tw4</item>
+    <item name="textView3" type="id">tw3</item>
+    <item name="textView1" type="id">tw1</item>
+</resources>
