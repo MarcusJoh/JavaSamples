@@ -3,6 +3,7 @@ package testCSV;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class readCSV {
@@ -31,7 +32,12 @@ public class readCSV {
 
 			e.printStackTrace();
 		}
-		
+		for (int i = 0; i < wholeSheet.size(); i++) {
+			// loopa genom values inne i records
+			List<String> localValues = wholeSheet.get(i);
+			System.out.println(localValues.size());
+		}
+
 
 	}
 
@@ -41,7 +47,7 @@ public class readCSV {
 		try (Scanner rowScanner = new Scanner(row)) {
 			rowScanner.useDelimiter(COMMA_DELIMITER);
 			while (rowScanner.hasNext()) {
-				rowValues.add(rowScanner.nextLine());
+				rowValues.add(rowScanner.next());
 			}
 
 			return rowValues;
